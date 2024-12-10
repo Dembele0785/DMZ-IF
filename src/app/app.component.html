@@ -5,27 +5,24 @@
       <span>Accueil</span>
     </a>
   </mat-list-item>
+
+  <mat-list-item>
+    <a routerLink="/activite">
+      Nos Activité
+    </a>
+  </mat-list-item>
+
 </mat-toolbar>
 <mat-sidenav-container>
   <mat-sidenav [opened]="true" mode="side">
     <mat-nav-list>
       <mat-list-item>
         <a routerLink="/">
-          <mat-icon>home</mat-icon>
-          <span>Accueil</span>
-        </a>
-      </mat-list-item>
-      <mat-list-item>
-        <a routerLink="/">
           <mat-icon>login</mat-icon>
           <span>Login</span>
         </a>
       </mat-list-item>
-      <mat-list-item>
-        <a routerLink="/activite">
-          activite
-        </a>
-      </mat-list-item>
+
     </mat-nav-list>
   </mat-sidenav>
 </mat-sidenav-container>
