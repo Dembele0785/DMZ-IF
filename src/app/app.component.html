@@ -1,34 +1,35 @@
-<mat-toolbar> <img src="/logo93moove.png"  class="md-card-image" alt="~/Frontend/images/question-circular-button.svg">
-  <mat-list-item>
-    <a routerLink="/">
-      <mat-icon>home</mat-icon>
-      <span>Accueil</span>
-    </a>
-  </mat-list-item>
+<div class="header"><mat-toolbar> <img src="/logo93moove.png"  class="md-card-image" alt="~/Frontend/images/question-circular-button.svg">
+
+  <mat-nav-list>
+
 
   <mat-list-item>
     <a routerLink="/activite">
       Nos Activité
     </a>
   </mat-list-item>
+  </mat-nav-list>
+  <mat-nav-list>
+  <mat-list-item>
+    <a routerLink="/apropos">
+      A propos
+    </a>
+  </mat-list-item>
+  </mat-nav-list>
+    <mat-nav-list>
+  <mat-list-item>
+    <a routerLink="/">
+      <mat-icon>login</mat-icon>
+      <span>Login</span>
+    </a>
+  </mat-list-item>
 
+  </mat-nav-list>
 </mat-toolbar>
 <mat-sidenav-container>
   <mat-sidenav [opened]="true" mode="side">
-    <mat-nav-list>
-      <mat-list-item>
-        <a routerLink="/">
-          <mat-icon>login</mat-icon>
-          <span>Login</span>
-        </a>
-      </mat-list-item>
 
-    </mat-nav-list>
   </mat-sidenav>
 </mat-sidenav-container>
-
-<app-activite></app-activite>
-
-<app-adherent></app-adherent>
-
+</div>
 <router-outlet/>
