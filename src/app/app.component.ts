@@ -6,10 +6,11 @@ import {MatToolbar} from '@angular/material/toolbar';
 import {MatSidenav, MatSidenavContainer} from '@angular/material/sidenav';
 import {MatListItem, MatNavList} from '@angular/material/list';
 import {MatIcon} from '@angular/material/icon';
+import {MatCard} from '@angular/material/card';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ActiviteComponent, AdherentComponent, MatToolbar, MatSidenavContainer, MatNavList, MatListItem, MatSidenav, MatIcon, RouterLink],
+  imports: [RouterOutlet , MatToolbar, MatSidenavContainer, MatNavList, MatListItem, MatSidenav, MatIcon, RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
